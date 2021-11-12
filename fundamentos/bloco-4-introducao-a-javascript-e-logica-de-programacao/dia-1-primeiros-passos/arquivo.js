@@ -1,3 +1,5 @@
+/* exercicio de fixação de variaveis */
+
 const myName = "Polyana";
 const birthCity = "Campos dos Goytacazes";
 let birthYear = 1998;
