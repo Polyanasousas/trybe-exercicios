@@ -1,6 +1,6 @@
 /* exercício de fixação de Tipos primitivos e operações aritméticas */
 
-let patientId = 50;
+let patientId = '50';
 let isEnrolled = true;
 const patientInfo = {
   firstName: 'Ana',
