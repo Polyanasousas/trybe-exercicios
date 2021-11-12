@@ -1,5 +1,6 @@
 /* exercício de fixação de Tipos primitivos e operações aritméticas */
 
+/*
 let patientId = '50';
 let isEnrolled = true;
 const patientInfo = {
@@ -12,4 +13,12 @@ console.log(typeof patientId)
 console.log(typeof isEnrolled)
 console.log(typeof patientInfo)
 console.log(typeof patientEmail)
-console.log(typeof patientAge)
+console.log(typeof patientAge) */
+
+const base = 5;
+let height = 8;
+const area = base * height;
+const perimeter = (base *2) + (height * 2); 
+
+console.log(area)
+console.log(perimeter)
