@@ -1,6 +1,6 @@
 /* Exercicios de fixação: Condições If e Else */
 
-const nota = 75;
+const nota = 40;
 
 if (nota >= 80) {
     console.log("Parabéns, você foi aprovado")
