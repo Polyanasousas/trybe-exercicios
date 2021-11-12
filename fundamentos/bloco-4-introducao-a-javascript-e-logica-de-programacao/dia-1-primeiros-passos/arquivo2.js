@@ -1,6 +1,7 @@
 /* exercício de fixação de Tipos primitivos e operações aritméticas */
 
-/*
+/* Exercicio 1 
+
 let patientId = '50';
 let isEnrolled = true;
 const patientInfo = {
@@ -15,6 +16,7 @@ console.log(typeof patientInfo)
 console.log(typeof patientEmail)
 console.log(typeof patientAge) */
 
+/* Exercicio 2*/
 const base = 5;
 let height = 8;
 const area = base * height;
