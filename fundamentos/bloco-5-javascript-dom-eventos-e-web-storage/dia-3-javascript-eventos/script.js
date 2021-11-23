@@ -67,3 +67,10 @@ function createDaysOfTheWeek() {
     tagPai.appendChild(botao);
   }
   createTagButton("Feriados");
+
+  //exercicio 3 
+  function clickForButton() {
+    let getBotao = document.querySelector("#btn-holiday");
+    getBotao.classList.add("clicar");
+  }
+  clickForButton();
