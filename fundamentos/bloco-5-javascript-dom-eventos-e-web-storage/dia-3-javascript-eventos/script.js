@@ -25,7 +25,7 @@ function createDaysOfTheWeek() {
         MonthDayListItem.innerHTML = MonthDays;
     
         MonthDaysList.appendChild(MonthDayListItem);
-      };
+      };  
   }
   createDaysOfTheMonth();
 
@@ -37,3 +37,33 @@ function createDaysOfTheWeek() {
     }
   }
   createClassForList();
+
+  function createClassForFridays() {
+    let listItem = document.querySelectorAll(".day");
+    
+      listItem[5].classList.add("friday")
+      listItem[12].classList.add("friday")
+      listItem[19].classList.add("friday")
+      listItem[26].classList.add("friday")  
+  }
+  createClassForFridays();
+
+  function createClassHoliday() {
+    let listItem = document.querySelectorAll(".day");
+
+      listItem[32].classList.add("holiday")
+      listItem[25].classList.add("holiday")
+      listItem[26].classList.add("holiday")
+  }
+  createClassHoliday();
+
+  //exercicio 2
+  function createTagButton(string) {
+    let botao = document.createElement("button");
+    botao.id = "btn-holiday"; 
+    botao.innerText = string;
+
+    let tagPai = document.querySelector(".buttons-container");
+    tagPai.appendChild(botao);
+  }
+  createTagButton("Feriados");
