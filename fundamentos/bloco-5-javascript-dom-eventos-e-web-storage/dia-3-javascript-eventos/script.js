@@ -28,3 +28,12 @@ function createDaysOfTheWeek() {
       };
   }
   createDaysOfTheMonth();
+
+  function createClassForList () {
+    let tags = document.querySelectorAll("#days li");
+  
+    for (let i = 0; i < tags.length; i += 1) {
+        tags[i].classList.add("day");
+    }
+  }
+  createClassForList();
