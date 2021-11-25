@@ -70,7 +70,18 @@ function createDaysOfTheWeek() {
 
   //exercicio 3 
   function clickForButton() {
-    let getBotao = document.querySelector("#btn-holiday");
-    getBotao.classList.add("clicar");
+    let botao = document.querySelector("#btn-holiday");
+    let feriados = document.querySelectorAll(".holiday");
+
+    
   }
-  clickForButton();
+  clickForButton(); 
+  
+  botao.addEventListener("click", clickForButton());
+
+  //3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
+// com a classe 'tech';
+input.addEventListener('input', function(event) {
+  const techElement = document.querySelector('.tech');
+  techElement.innerText = event.target.value;
+});
