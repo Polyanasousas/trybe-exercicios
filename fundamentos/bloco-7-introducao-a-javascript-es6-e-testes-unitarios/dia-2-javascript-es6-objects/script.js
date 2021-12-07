@@ -34,26 +34,28 @@ const order = {
   },
 };
 
-const customerInfo = (order) => {
-  // Adicione abaixo as informações necessárias.
-  const entries = Object.entries(order);
-  // console.log(entries);
-  let deliveryPerson = entries[3][1].delivery.deliveryPerson;
-  let client = order.name;
-  let phone = order.phoneNumber;
-  let address = entries[2][1];
-  
-  const result = `Olá ${deliveryPerson}, entrega para: ${client}, Telefone: ${phone}, R. ${address.street}, Nº: ${address.number}, AP: ${address.apartment}`
-  
+const entries = Object.entries(order);
+// console.log(entries);
+let deliveryPerson = entries[3][1].delivery.deliveryPerson;
+let client = order.name;
+let phone = order.phoneNumber;
+let address = entries[2][1];
+
+const customerInfo = (order) => { 
+  const result = `Olá ${deliveryPerson}, entrega para: ${client}, Telefone: ${phone}, R. ${address.street}, Nº: ${address.number}, AP: ${address.apartment}`  
   console.log(result);
 }
 customerInfo(order);
 
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
+  client = 'Luiz Silva';
+  const pedido = Object.keys(order.order.pizza);
+  const beverage = entries[3][1].drinks.coke.type;
+  order.payment.total = 50.58;
+  const result2 = `Olá ${client}, o total do seu pedido de ${pedido[0]}, ${pedido[1]} e ${beverage} é R$ ${order.payment.total.toFixed(2)}.`
 
+  console.log(result2);
 }
-
 orderModifier(order);
 
 /*
